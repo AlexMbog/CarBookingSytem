@@ -1,1 +1,1 @@
-this is a remote carbooking system designed for remote booking of  public vehicles in this case the popular Matatus in third world countries where there are no or few formal bust stops. it utilizes Php, bootsrap, css, Google Apis and msql Database to achieve the unique integration
+CarBooking System is a remote carbooking system designed for remote booking of  public vehicles in this case the popular Matatus in third world countries where there are no or few formal bus stops. it utilizes Php, bootsrap, css, Google Apis and msql Database to achieve the unique integration
