@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+::after
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+} 
+li {
+    list-style: none;
+
+}
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+body {
+    font-family: 'Poppins' ,sans-serif;
+
+}
+.wrapper{
+    display: flex;
+    
+}
+.main {
+        min-height: 100vh;
+        width: calc(100% - 70px); /* Adjust this value to leave space for the sidebar */
+        margin-left: 70px; /* Keep a margin for the sidebar */
+        overflow: auto; /* Allow the content to scroll */
+        transition: margin-left .25s ease-in-out;
+        background-color: #ebebf5;
+    }
+    
+    #main.expand {
+        margin-left: 180px;
+        width: calc(100% - 180px);
+    }
+#sidebar{
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: auto;
+   
+}
+
+#sidebar.expand {
+    width:180px ;
+    min-width: 180px;
+
+}
+#toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+#toggle-btn i{
+    font-size: 1.5rem;
+    color:#fff;
+
+}
+.sidebar-logo {
+    margin: auto 0;
+
+}
+.sidebar-logo a{
+    color:#fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+
+}
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+
+}
+.sidebar-nav{
+    padding: 2rem 0;
+    flex: 1  1 auto;
+}
+a.sidebar-link{
+    padding:  .625rem 1.625rem;
+    color:#fff;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;;
+    border-left: 3px solid transparent;
+}
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075); 
+    border-left: 3px solid #3b7ddd;
+
+}
+.sidebar-item{
+    position: relative;
+}
+/*................main..................*/
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 5px;
+}
+
+
+.report-container {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; 
+    text-align: center;
+}
+
+#print-btn {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+}
+
+h1 {
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+form .btn-container {
+    margin-top: 20px; 
+}
+
+.btn-container button {
+    margin-right: 10px; 
+    padding: 10px 20px; 
+}

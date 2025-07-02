@@ -1,0 +1,44 @@
+.main{
+   
+    background-image: url(../images/bus.jpg);
+    background-size: cover;
+}
+.wrapper{
+    background-color: rgba(78, 59, 59, 0.5);
+    border-top: 3px solid black;
+}
+.wrapper .input-group .input-group-text
+{
+    background-color: rgb(159, 153, 153);
+}
+.form-control{
+    background-color: rgb(203, 195, 195);
+}
+.form-select{
+    background-color: rgb(203, 195, 195);
+}
+.password-toggle {
+    position: relative;
+}
+.password-toggle input[type="password"] {
+    padding-right: 30px;
+}
+.password-toggle button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+p, a:hover{
+    color: rgb(20, 160, 160);
+
+}

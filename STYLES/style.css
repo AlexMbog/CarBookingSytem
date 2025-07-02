@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+::after
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+} 
+li {
+    list-style: none;
+
+}
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+body {
+    font-family: 'Poppins' ,sans-serif;
+
+}
+.wrapper{
+    display: flex;
+    
+}
+.main{
+    min-height: 100vh;
+    width: calc(100% - 70px);
+    margin-left: 70px; 
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #ebebf5;
+}
+#sidebar{
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+
+}
+#sidebar.expand {
+    width:180px ;
+    min-width: 180px;
+
+}
+#toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+#toggle-btn i{
+    font-size: 1.5rem;
+    color:#fff;
+
+}
+.sidebar-logo {
+    margin: auto 0;
+
+}
+.sidebar-logo a{
+    color:#fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+
+}
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+
+}
+.sidebar-nav{
+    padding: 2rem 0;
+    flex: 1  1 auto;
+}
+a.sidebar-link{
+    padding:  .625rem 1.625rem;
+    color:#fff;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;;
+    border-left: 3px solid transparent;
+}
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075); 
+    border-left: 3px solid #3b7ddd;
+
+}
+.sidebar-item{
+    position: relative;
+}
+/*................main..................*/
+.navbar{
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 2px;
+    display: flex;
+   
+}
+.container-fluid{
+    background-color: transparent;
+    top: 0px;
+    border-radius: 5px;
+}
+
+ .btn{
+
+    border-color: #403f3f;
+    border-radius: 8px;
+    color: #0e0e0e;
+}
+.btn:hover{
+    background-color: #0e0e0e;
+    color: #f0eaea;
+    outline: #f0eaea;
+}
+.user{
+    text-decoration: none;
+    color: #0e0e0e;
+    bottom:3px;
+}
+.user i{
+    color: #0e0e0e;
+    font-size: 1.5rem;
+    position: relative;
+    bottom:3px;
+}
+.main p-3 .container-fluid{
+    position: relative;
+    left: 50%; 
+
+
+    margin-left: 100%;
+}
+/*map sytles*/
+.map-1{
+   
+    border: 1px solid #0e0e0e;
+    border-radius: 4px;
+    height: 400px;
+    width: 600px;
+    min-width: 400px;
+    position: relative;
+    left: 20%;
+    padding-top: 20px;
+    margin-top: 15px;
+    
+}
+.map-1 img {
+    width:300px;
+    position: relative;
+    align-items: center;
+    left: 150px;
+    cursor: pointer;
+}
+.text-center{
+    padding-top: 10px;
+}
